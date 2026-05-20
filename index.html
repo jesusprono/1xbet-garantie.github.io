@@ -1,1369 +1,1556 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guide 1xBet – Code Promo 1x_4244948</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #050810;
-    --bg2: #080d1a;
-    --card: #0d1425;
-    --card2: #111b30;
-    --neon: #00f5a0;
-    --neon2: #00d4ff;
-    --neon3: #7b5ea7;
-    --blue: #1a2a4a;
-    --text: #e8edf8;
-    --muted: #7a8aaa;
-    --border: rgba(0,245,160,0.12);
-    --radius: 20px;
-    --radius-sm: 12px;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0f1f">
+    <title>ArbiSure - Plateforme IA Mondiale d'Arbitrage Sportif</title>
+    
+    <style>
+        /* ============= RESET ============= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
 
-  * { margin:0; padding:0; box-sizing:border-box; }
+        :root {
+            --bg-primary: #0a0f1f;
+            --bg-secondary: #0f1829;
+            --bg-tertiary: #1a2847;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b5cc;
+            --text-tertiary: #7a8499;
+            --accent-primary: #00e5ff;
+            --accent-secondary: #2563eb;
+            --accent-glow: #0099ff;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --border-light: #1e3a5f;
+            --border-glow: rgba(0, 229, 255, 0.2);
+        }
 
-  html {
-    scroll-behavior: smooth;
-    font-size: 16px;
-  }
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a0f1f 0%, #0f1829 50%, #0a0f1f 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 229, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+            animation: gradientShift 20s ease infinite;
+        }
 
-  /* ——— BACKGROUND EFFECTS ——— */
-  body::before {
-    content:'';
-    position:fixed;
-    top:-30%;
-    left:-20%;
-    width:70%;
-    height:70%;
-    background: radial-gradient(ellipse, rgba(0,245,160,0.04) 0%, transparent 70%);
-    pointer-events:none;
-    z-index:0;
-  }
-  body::after {
-    content:'';
-    position:fixed;
-    bottom:-20%;
-    right:-10%;
-    width:60%;
-    height:60%;
-    background: radial-gradient(ellipse, rgba(0,212,255,0.05) 0%, transparent 70%);
-    pointer-events:none;
-    z-index:0;
-  }
+        @keyframes gradientShift {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1.2; }
+        }
 
-  /* ——— SCROLLBAR ——— */
-  ::-webkit-scrollbar { width:4px; }
-  ::-webkit-scrollbar-track { background: var(--bg); }
-  ::-webkit-scrollbar-thumb { background: var(--neon); border-radius:10px; }
+        body {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
 
-  /* ——— NAV ——— */
-  nav {
-    position: fixed;
-    top:0; left:0; right:0;
-    z-index:100;
-    padding:14px 20px;
-    background: rgba(5,8,16,0.85);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-  }
-  .nav-logo {
-    font-family:'Syne',sans-serif;
-    font-weight:800;
-    font-size:1.1rem;
-    background: linear-gradient(90deg,var(--neon),var(--neon2));
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    letter-spacing:-0.02em;
-  }
-  .nav-badge {
-    background: rgba(0,245,160,0.1);
-    border:1px solid var(--border);
-    border-radius:50px;
-    padding:5px 14px;
-    font-size:0.72rem;
-    color: var(--neon);
-    font-weight:500;
-    letter-spacing:0.05em;
-  }
+        /* ============= ANIMATIONS ============= */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-  /* ——— HERO ——— */
-  .hero {
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:100px 20px 60px;
-    position:relative;
-    z-index:1;
-  }
-  .hero-eyebrow {
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    background:rgba(0,245,160,0.08);
-    border:1px solid var(--border);
-    border-radius:50px;
-    padding:6px 16px;
-    font-size:0.75rem;
-    color:var(--neon);
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    margin-bottom:28px;
-    animation: fadeUp 0.8s ease both;
-  }
-  .hero-eyebrow .dot {
-    width:7px;height:7px;
-    background:var(--neon);
-    border-radius:50%;
-    animation: pulse 2s infinite;
-  }
-  .hero h1 {
-    font-family:'Syne',sans-serif;
-    font-size:clamp(2.2rem,8vw,4.5rem);
-    font-weight:800;
-    line-height:1.1;
-    letter-spacing:-0.03em;
-    margin-bottom:20px;
-    animation: fadeUp 0.8s 0.1s ease both;
-  }
-  .hero h1 span {
-    background: linear-gradient(135deg, var(--neon) 0%, var(--neon2) 100%);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-  }
-  .hero p {
-    color:var(--muted);
-    max-width:480px;
-    font-size:1.05rem;
-    margin-bottom:36px;
-    animation: fadeUp 0.8s 0.2s ease both;
-  }
-  .btn-primary {
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background: linear-gradient(135deg, var(--neon), var(--neon2));
-    color:#050810;
-    font-weight:700;
-    font-family:'Syne',sans-serif;
-    padding:15px 34px;
-    border-radius:50px;
-    border:none;
-    cursor:pointer;
-    font-size:0.95rem;
-    text-decoration:none;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 0 30px rgba(0,245,160,0.3);
-    animation: fadeUp 0.8s 0.3s ease both;
-  }
-  .btn-primary:hover {
-    transform:translateY(-2px) scale(1.02);
-    box-shadow: 0 0 50px rgba(0,245,160,0.5);
-  }
-  .btn-primary:active { transform:scale(0.97); }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-  .hero-scroll {
-    position:absolute;
-    bottom:30px;
-    left:50%;
-    transform:translateX(-50%);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:6px;
-    color:var(--muted);
-    font-size:0.7rem;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    animation: fadeIn 1.5s 1s ease both;
-  }
-  .scroll-line {
-    width:1px;height:40px;
-    background:linear-gradient(to bottom,var(--neon),transparent);
-    animation:scrollLine 2s infinite;
-  }
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-  /* ——— SECTIONS ——— */
-  section {
-    padding:70px 20px;
-    max-width:700px;
-    margin:0 auto;
-    position:relative;
-    z-index:1;
-  }
-  .section-tag {
-    display:inline-block;
-    font-size:0.7rem;
-    font-weight:600;
-    letter-spacing:0.15em;
-    text-transform:uppercase;
-    color:var(--neon);
-    margin-bottom:12px;
-  }
-  .section-title {
-    font-family:'Syne',sans-serif;
-    font-size:clamp(1.6rem,5vw,2.4rem);
-    font-weight:800;
-    letter-spacing:-0.02em;
-    margin-bottom:14px;
-    line-height:1.15;
-  }
-  .section-sub {
-    color:var(--muted);
-    font-size:0.95rem;
-    margin-bottom:36px;
-    max-width:520px;
-  }
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(0, 229, 255, 0.4), inset 0 0 20px rgba(0, 229, 255, 0.1);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(0, 229, 255, 0.6), inset 0 0 20px rgba(0, 229, 255, 0.2);
+            }
+        }
 
-  /* ——— PROMO CODE ——— */
-  .promo-wrap {
-    background: linear-gradient(135deg,rgba(0,245,160,0.07),rgba(0,212,255,0.07));
-    border:1px solid rgba(0,245,160,0.25);
-    border-radius:24px;
-    padding:32px 24px;
-    text-align:center;
-    position:relative;
-    overflow:hidden;
-    margin-bottom:20px;
-  }
-  .promo-wrap::before {
-    content:'';
-    position:absolute;
-    inset:-1px;
-    border-radius:24px;
-    background:linear-gradient(135deg,rgba(0,245,160,0.3),rgba(0,212,255,0.1),transparent);
-    opacity:0;
-    transition:opacity 0.4s;
-    pointer-events:none;
-  }
-  .promo-wrap:hover::before { opacity:1; }
-  .promo-label {
-    font-size:0.75rem;
-    color:var(--muted);
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    margin-bottom:16px;
-  }
-  .promo-code {
-    font-family:'Syne',sans-serif;
-    font-size:clamp(2rem,9vw,3.8rem);
-    font-weight:800;
-    letter-spacing:0.04em;
-    background:linear-gradient(135deg,var(--neon),var(--neon2));
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    text-shadow:none;
-    filter: drop-shadow(0 0 20px rgba(0,245,160,0.4));
-    display:block;
-    margin-bottom:24px;
-    user-select:all;
-    animation: glowPulse 3s ease-in-out infinite;
-  }
-  .promo-btns {
-    display:flex;
-    gap:12px;
-    justify-content:center;
-    flex-wrap:wrap;
-  }
-  .btn-copy {
-    display:flex;
-    align-items:center;
-    gap:8px;
-    background:linear-gradient(135deg,var(--neon),var(--neon2));
-    color:#050810;
-    font-weight:700;
-    font-family:'Syne',sans-serif;
-    padding:13px 26px;
-    border-radius:50px;
-    border:none;
-    cursor:pointer;
-    font-size:0.9rem;
-    transition:all 0.2s;
-    box-shadow:0 0 25px rgba(0,245,160,0.3);
-    position:relative;
-    overflow:hidden;
-  }
-  .btn-copy::after {
-    content:'';
-    position:absolute;
-    inset:0;
-    background:white;
-    opacity:0;
-    transition:opacity 0.2s;
-  }
-  .btn-copy:active::after { opacity:0.2; }
-  .btn-copy:hover { transform:scale(1.03); box-shadow:0 0 40px rgba(0,245,160,0.5); }
-  .btn-share {
-    display:flex;
-    align-items:center;
-    gap:8px;
-    background:transparent;
-    color:var(--text);
-    font-weight:600;
-    font-family:'DM Sans',sans-serif;
-    padding:13px 22px;
-    border-radius:50px;
-    border:1px solid rgba(255,255,255,0.15);
-    cursor:pointer;
-    font-size:0.9rem;
-    transition:all 0.2s;
-  }
-  .btn-share:hover {
-    background:rgba(255,255,255,0.07);
-    border-color:rgba(255,255,255,0.3);
-    transform:scale(1.02);
-  }
-  .copy-toast {
-    position:fixed;
-    bottom:100px;
-    left:50%;
-    transform:translateX(-50%) translateY(20px);
-    background:linear-gradient(135deg,var(--neon),var(--neon2));
-    color:#050810;
-    font-weight:700;
-    font-family:'Syne',sans-serif;
-    padding:12px 24px;
-    border-radius:50px;
-    font-size:0.9rem;
-    opacity:0;
-    pointer-events:none;
-    transition:all 0.3s;
-    z-index:999;
-    white-space:nowrap;
-  }
-  .copy-toast.show {
-    opacity:1;
-    transform:translateX(-50%) translateY(0);
-  }
-  .promo-note {
-    margin-top:20px;
-    background:rgba(0,245,160,0.06);
-    border-left:3px solid var(--neon);
-    border-radius:0 12px 12px 0;
-    padding:14px 18px;
-    font-size:0.88rem;
-    color:var(--muted);
-  }
-  .promo-note strong { color:var(--text); }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
 
-  /* ——— CARDS ——— */
-  .cards-grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-    margin-top:8px;
-  }
-  @media(max-width:500px){ .cards-grid { grid-template-columns:1fr; } }
-  .card {
-    background:var(--card);
-    border:1px solid rgba(255,255,255,0.06);
-    border-radius:var(--radius);
-    padding:22px 20px;
-    transition:all 0.25s;
-    position:relative;
-    overflow:hidden;
-  }
-  .card::before {
-    content:'';
-    position:absolute;
-    top:0;left:0;right:0;
-    height:2px;
-    background:linear-gradient(90deg,var(--neon),var(--neon2));
-    opacity:0;
-    transition:opacity 0.3s;
-  }
-  .card:hover {
-    border-color:rgba(0,245,160,0.2);
-    transform:translateY(-3px);
-    background:var(--card2);
-  }
-  .card:hover::before { opacity:1; }
-  .card-icon {
-    font-size:1.8rem;
-    margin-bottom:12px;
-    display:block;
-    line-height:1;
-  }
-  .card-title {
-    font-family:'Syne',sans-serif;
-    font-weight:700;
-    font-size:0.95rem;
-    margin-bottom:6px;
-  }
-  .card-text {
-    color:var(--muted);
-    font-size:0.83rem;
-    line-height:1.5;
-  }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
 
-  /* ——— INFO BOX ——— */
-  .info-box {
-    background:linear-gradient(135deg,rgba(0,212,255,0.07),rgba(0,245,160,0.04));
-    border:1px solid rgba(0,212,255,0.2);
-    border-radius:20px;
-    padding:26px 22px;
-    margin-bottom:16px;
-  }
-  .info-box-title {
-    font-family:'Syne',sans-serif;
-    font-weight:700;
-    font-size:1rem;
-    color:var(--neon2);
-    margin-bottom:10px;
-    display:flex;
-    align-items:center;
-    gap:8px;
-  }
-  .info-box p {
-    color:var(--muted);
-    font-size:0.9rem;
-    line-height:1.65;
-  }
+        @keyframes scanLine {
+            0% { transform: translateY(-100%); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(100%); opacity: 0; }
+        }
 
-  /* ——— TIPS LIST ——— */
-  .tips-list {
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-  }
-  .tip-item {
-    background:var(--card);
-    border:1px solid rgba(255,255,255,0.06);
-    border-radius:var(--radius-sm);
-    padding:18px 20px;
-    display:flex;
-    align-items:flex-start;
-    gap:14px;
-    transition:all 0.25s;
-    cursor:default;
-  }
-  .tip-item:hover {
-    border-color:rgba(0,245,160,0.15);
-    background:var(--card2);
-    transform:translateX(4px);
-  }
-  .tip-num {
-    min-width:32px;
-    height:32px;
-    background:linear-gradient(135deg,var(--neon),var(--neon2));
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:800;
-    font-family:'Syne',sans-serif;
-    font-size:0.8rem;
-    color:#050810;
-    flex-shrink:0;
-  }
-  .tip-content strong {
-    display:block;
-    font-weight:600;
-    font-size:0.92rem;
-    margin-bottom:3px;
-  }
-  .tip-content span {
-    color:var(--muted);
-    font-size:0.83rem;
-  }
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
 
-  /* ——— PROBLEMS / SOLUTIONS ——— */
-  .pb-list {
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-  }
-  .pb-item {
-    background:rgba(255,80,80,0.06);
-    border:1px solid rgba(255,80,80,0.15);
-    border-radius:var(--radius-sm);
-    padding:16px 18px;
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:0.9rem;
-  }
-  .pb-item .ico { font-size:1.2rem; }
-  .sol-item {
-    background:rgba(0,245,160,0.05);
-    border:1px solid rgba(0,245,160,0.15);
-    border-radius:var(--radius-sm);
-    padding:16px 18px;
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
-    font-size:0.9rem;
-    transition:all 0.2s;
-  }
-  .sol-item:hover { background:rgba(0,245,160,0.09); }
-  .sol-item .ico { font-size:1.2rem; flex-shrink:0; }
-  .sol-item .sol-text strong { display:block; font-size:0.88rem; margin-bottom:2px; }
-  .sol-item .sol-text span { color:var(--muted); font-size:0.8rem; }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
 
-  /* ——— SIMULATOR ——— */
-  .sim-wrap {
-    background: var(--card);
-    border:1px solid rgba(0,245,160,0.15);
-    border-radius:24px;
-    padding:28px 22px;
-  }
-  .sim-row {
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-    margin-bottom:20px;
-  }
-  .sim-label {
-    font-size:0.82rem;
-    color:var(--muted);
-    margin-bottom:8px;
-    font-weight:500;
-    letter-spacing:0.03em;
-  }
-  .sim-input {
-    background: var(--bg2);
-    border:1px solid rgba(255,255,255,0.1);
-    border-radius:12px;
-    padding:13px 16px;
-    color:var(--text);
-    font-size:1rem;
-    font-family:'DM Sans',sans-serif;
-    width:100%;
-    outline:none;
-    transition:border-color 0.2s;
-    appearance:none;
-  }
-  .sim-input:focus { border-color:var(--neon); }
-  .sim-result {
-    background:linear-gradient(135deg,rgba(0,245,160,0.08),rgba(0,212,255,0.05));
-    border:1px solid rgba(0,245,160,0.2);
-    border-radius:14px;
-    padding:18px;
-    text-align:center;
-  }
-  .sim-result .sim-gain {
-    font-family:'Syne',sans-serif;
-    font-size:2rem;
-    font-weight:800;
-    background:linear-gradient(135deg,var(--neon),var(--neon2));
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-  }
-  .sim-result .sim-desc {
-    color:var(--muted);
-    font-size:0.78rem;
-    margin-top:6px;
-  }
-  .sim-result .sim-warning {
-    margin-top:10px;
-    font-size:0.75rem;
-    color:#ff9f43;
-    background:rgba(255,159,67,0.07);
-    border-radius:8px;
-    padding:8px 12px;
-  }
-  .btn-calc {
-    width:100%;
-    background:linear-gradient(135deg,var(--neon),var(--neon2));
-    color:#050810;
-    font-weight:700;
-    font-family:'Syne',sans-serif;
-    padding:14px;
-    border-radius:50px;
-    border:none;
-    cursor:pointer;
-    font-size:0.95rem;
-    transition:all 0.2s;
-    margin-bottom:16px;
-  }
-  .btn-calc:hover { transform:scale(1.02); box-shadow:0 0 30px rgba(0,245,160,0.4); }
-  .btn-calc:active { transform:scale(0.98); }
+        /* ============= NAV ============= */
+        .nav-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: rgba(10, 15, 31, 0.98);
+            backdrop-filter: blur(30px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            padding: 0 var(--sp-4);
+            animation: slideDown 0.5s ease;
+        }
 
-  /* ——— FAQ ——— */
-  .faq-list { display:flex; flex-direction:column; gap:10px; }
-  .faq-item {
-    background:var(--card);
-    border:1px solid rgba(255,255,255,0.07);
-    border-radius:var(--radius-sm);
-    overflow:hidden;
-    transition:border-color 0.2s;
-  }
-  .faq-item:hover { border-color:rgba(0,245,160,0.2); }
-  .faq-q {
-    padding:18px 20px;
-    font-weight:600;
-    font-size:0.9rem;
-    cursor:pointer;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:12px;
-    user-select:none;
-  }
-  .faq-q .arrow {
-    font-size:0.8rem;
-    color:var(--neon);
-    transition:transform 0.3s;
-    flex-shrink:0;
-  }
-  .faq-item.open .faq-q .arrow { transform:rotate(180deg); }
-  .faq-a {
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0.4s ease;
-    color:var(--muted);
-    font-size:0.87rem;
-    line-height:1.6;
-  }
-  .faq-a-inner { padding:0 20px 18px; }
-  .faq-item.open .faq-a { max-height:200px; }
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
 
-  /* ——— CTA ——— */
-  .cta-section {
-    text-align:center;
-    padding:60px 20px 50px;
-    max-width:600px;
-    margin:0 auto;
-    position:relative;
-    z-index:1;
-  }
-  .cta-glow {
-    position:absolute;
-    top:50%;left:50%;
-    transform:translate(-50%,-50%);
-    width:300px;height:300px;
-    background:radial-gradient(circle,rgba(0,245,160,0.08) 0%,transparent 70%);
-    pointer-events:none;
-  }
-  .cta-section h2 {
-    font-family:'Syne',sans-serif;
-    font-size:clamp(1.8rem,6vw,2.8rem);
-    font-weight:800;
-    letter-spacing:-0.02em;
-    margin-bottom:14px;
-    position:relative;
-  }
-  .cta-section p {
-    color:var(--muted);
-    margin-bottom:32px;
-    position:relative;
-  }
-  .cta-btns {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:14px;
-    position:relative;
-  }
-  .btn-cta-main {
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:linear-gradient(135deg,var(--neon),var(--neon2));
-    color:#050810;
-    font-weight:800;
-    font-family:'Syne',sans-serif;
-    padding:18px 36px;
-    border-radius:50px;
-    border:none;
-    cursor:pointer;
-    font-size:1rem;
-    text-decoration:none;
-    transition:all 0.2s;
-    box-shadow:0 0 40px rgba(0,245,160,0.35);
-    white-space:nowrap;
-  }
-  .btn-cta-main:hover {
-    transform:translateY(-3px) scale(1.02);
-    box-shadow:0 0 60px rgba(0,245,160,0.55);
-  }
-  .btn-wa {
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:rgba(37,211,102,0.12);
-    border:1px solid rgba(37,211,102,0.3);
-    color:#25d366;
-    font-weight:600;
-    font-family:'DM Sans',sans-serif;
-    padding:14px 28px;
-    border-radius:50px;
-    cursor:pointer;
-    font-size:0.92rem;
-    text-decoration:none;
-    transition:all 0.2s;
-  }
-  .btn-wa:hover { background:rgba(37,211,102,0.2); transform:scale(1.02); }
+        .logo {
+            font-size: 20px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #00e5ff, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
 
-  /* ——— FLOATING WA ——— */
-  .fab-wa {
-    position:fixed;
-    bottom:28px;
-    right:22px;
-    width:56px;height:56px;
-    background:linear-gradient(135deg,#25d366,#128c7e);
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:1.6rem;
-    cursor:pointer;
-    z-index:200;
-    box-shadow:0 4px 24px rgba(37,211,102,0.5);
-    text-decoration:none;
-    transition:all 0.25s;
-    animation: fabBounce 3s 2s ease-in-out infinite;
-  }
-  .fab-wa:hover {
-    transform:scale(1.12);
-    box-shadow:0 6px 34px rgba(37,211,102,0.7);
-  }
-  .fab-pulse {
-    position:absolute;
-    inset:-4px;
-    border-radius:50%;
-    background:rgba(37,211,102,0.3);
-    animation:fabPulse 2s ease-in-out infinite;
-  }
+        .logo span {
+            font-size: 24px;
+            animation: float 3s ease-in-out infinite;
+        }
 
-  /* ——— FOOTER ——— */
-  footer {
-    border-top:1px solid rgba(255,255,255,0.06);
-    padding:32px 20px;
-    text-align:center;
-    color:var(--muted);
-    font-size:0.78rem;
-    position:relative;
-    z-index:1;
-    max-width:700px;
-    margin:0 auto;
-    line-height:1.8;
-  }
-  footer strong { color:var(--text); }
+        .nav-actions {
+            display: flex;
+            gap: 12px;
+        }
 
-  /* ——— DIVIDER ——— */
-  .divider {
-    height:1px;
-    background:linear-gradient(90deg,transparent,rgba(0,245,160,0.15),transparent);
-    margin:0 20px;
-    position:relative;
-    z-index:1;
-  }
+        .btn-nav {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            position: relative;
+        }
 
-  /* ——— SHARE MODAL ——— */
-  .modal-overlay {
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.7);
-    backdrop-filter:blur(10px);
-    z-index:300;
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-    opacity:0;
-    pointer-events:none;
-    transition:opacity 0.3s;
-  }
-  .modal-overlay.show { opacity:1; pointer-events:all; }
-  .modal-sheet {
-    background:var(--card2);
-    border:1px solid rgba(255,255,255,0.1);
-    border-radius:28px 28px 0 0;
-    padding:30px 24px 40px;
-    width:100%;
-    max-width:500px;
-    transform:translateY(100%);
-    transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
-  }
-  .modal-overlay.show .modal-sheet { transform:translateY(0); }
-  .modal-handle {
-    width:40px;height:4px;
-    background:rgba(255,255,255,0.2);
-    border-radius:4px;
-    margin:0 auto 24px;
-  }
-  .modal-title {
-    font-family:'Syne',sans-serif;
-    font-weight:800;
-    font-size:1.1rem;
-    margin-bottom:20px;
-    text-align:center;
-  }
-  .share-grid {
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:12px;
-  }
-  .share-btn {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:8px;
-    background:var(--card);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:16px;
-    padding:16px 8px;
-    cursor:pointer;
-    text-decoration:none;
-    color:var(--text);
-    font-size:0.72rem;
-    transition:all 0.2s;
-  }
-  .share-btn:hover { background:var(--card2); transform:scale(1.05); }
-  .share-btn span { font-size:1.6rem; }
-  .modal-close {
-    width:100%;
-    margin-top:16px;
-    background:transparent;
-    border:1px solid rgba(255,255,255,0.12);
-    border-radius:50px;
-    padding:13px;
-    color:var(--muted);
-    font-family:'DM Sans',sans-serif;
-    cursor:pointer;
-    font-size:0.88rem;
-    transition:all 0.2s;
-  }
-  .modal-close:hover { background:rgba(255,255,255,0.05); }
+        .btn-nav-primary {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: #000;
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.4);
+        }
 
-  /* ——— ANIMATIONS ——— */
-  @keyframes fadeUp {
-    from { opacity:0; transform:translateY(24px); }
-    to { opacity:1; transform:translateY(0); }
-  }
-  @keyframes fadeIn {
-    from { opacity:0; }
-    to { opacity:1; }
-  }
-  @keyframes pulse {
-    0%,100% { opacity:1; transform:scale(1); }
-    50% { opacity:0.5; transform:scale(0.8); }
-  }
-  @keyframes scrollLine {
-    0% { transform:scaleY(0); transform-origin:top; }
-    50% { transform:scaleY(1); transform-origin:top; }
-    51% { transform:scaleY(1); transform-origin:bottom; }
-    100% { transform:scaleY(0); transform-origin:bottom; }
-  }
-  @keyframes glowPulse {
-    0%,100% { filter:drop-shadow(0 0 15px rgba(0,245,160,0.35)); }
-    50% { filter:drop-shadow(0 0 35px rgba(0,245,160,0.65)); }
-  }
-  @keyframes fabBounce {
-    0%,100% { transform:translateY(0); }
-    50% { transform:translateY(-6px); }
-  }
-  @keyframes fabPulse {
-    0%,100% { opacity:0.5; transform:scale(1); }
-    50% { opacity:0; transform:scale(1.5); }
-  }
+        .btn-nav-primary:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 50px rgba(0, 229, 255, 0.7);
+        }
 
-  /* ——— REVEAL ON SCROLL ——— */
-  .reveal {
-    opacity:0;
-    transform:translateY(30px);
-    transition:opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.visible {
-    opacity:1;
-    transform:translateY(0);
-  }
+        /* ============= PAGES ============= */
+        .page {
+            display: none;
+            flex: 1;
+            padding-top: 56px;
+            animation: fadeIn 0.6s ease;
+        }
 
-  /* ——— BADGE ——— */
-  .badge-row {
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-top:24px;
-  }
-  .badge {
-    background:rgba(0,245,160,0.07);
-    border:1px solid var(--border);
-    border-radius:50px;
-    padding:6px 14px;
-    font-size:0.78rem;
-    color:var(--neon);
-    font-weight:500;
-  }
+        .page.active {
+            display: flex;
+            flex-direction: column;
+        }
 
-  @media(max-width:420px){
-    .share-grid { grid-template-columns:repeat(3,1fr); }
-    .promo-btns { flex-direction:column; }
-    .btn-copy,.btn-share { justify-content:center; }
-  }
-</style>
+        /* ============= LANDING ============= */
+        .landing-container {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .hero {
+            padding: 48px 16px;
+            text-align: center;
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(0, 229, 255, 0.08) 0%, transparent 100%);
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        .hero-title {
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+            animation: slideUp 0.8s ease;
+            background: linear-gradient(135deg, #ffffff 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.6;
+            animation: slideUp 0.8s ease 0.1s both;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            animation: slideUp 0.8s ease 0.2s both;
+            margin-bottom: 32px;
+        }
+
+        .btn-primary {
+            padding: 16px 20px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: #000;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.35);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.25);
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+            box-shadow: 0 0 50px rgba(0, 229, 255, 0.6);
+        }
+
+        .btn-secondary {
+            padding: 16px 20px;
+            background: rgba(26, 40, 71, 0.6);
+            border: 2px solid var(--accent-secondary);
+            color: var(--text-primary);
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(15px);
+        }
+
+        .btn-secondary:active {
+            background: rgba(26, 40, 71, 0.9);
+            transform: scale(0.98);
+        }
+
+        /* ============= IMAGES SECTION ============= */
+        .images-section {
+            padding: 48px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .image-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(37, 99, 235, 0.12));
+            border: 2px solid var(--border-light);
+            padding: 16px;
+            animation: slideUp 1s ease backwards;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.15);
+        }
+
+        .image-card:nth-child(1) { animation-delay: 0.4s; }
+        .image-card:nth-child(2) { animation-delay: 0.6s; }
+
+        .image-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 60px rgba(0, 229, 255, 0.35);
+            transform: translateY(-8px);
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.18), rgba(37, 99, 235, 0.18));
+        }
+
+        .image-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+            z-index: 2;
+        }
+
+        .image-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.1) 0%, transparent 100%);
+            pointer-events: none;
+            z-index: 1;
+            border-radius: 16px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            z-index: 2;
+            border-radius: 16px;
+            overflow: hidden;
+            background: rgba(10, 15, 31, 0.8);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+            transition: all 0.5s ease;
+            filter: brightness(1);
+        }
+
+        .image-card:hover img {
+            transform: scale(1.03);
+            filter: brightness(1.1);
+        }
+
+        .image-label {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(0, 229, 255, 0.2);
+            border: 1px solid var(--accent-primary);
+            color: var(--accent-primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+            z-index: 3;
+        }
+
+        /* ============= STATS ============= */
+        .stats-section {
+            padding: 48px 16px;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.06) 0%, rgba(37, 99, 235, 0.06) 100%);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: rgba(26, 40, 71, 0.5);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            animation: slideUp 0.6s ease backwards;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:nth-child(1) { animation-delay: 0.1s; }
+        .stat-card:nth-child(2) { animation-delay: 0.2s; }
+        .stat-card:nth-child(3) { animation-delay: 0.3s; }
+        .stat-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .stat-card:hover {
+            border-color: var(--accent-primary);
+            background: rgba(0, 229, 255, 0.12);
+            transform: translateY(-6px);
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.25);
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--accent-primary);
+            margin-bottom: 8px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* ============= FEATURES ============= */
+        .features-section {
+            padding: 48px 16px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 8px;
+            text-align: center;
+            animation: slideUp 0.6s ease;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 32px;
+            animation: slideUp 0.6s ease 0.1s both;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(37, 99, 235, 0.12));
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            animation: slideUp 0.6s ease backwards;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(15px);
+        }
+
+        .feature-card:nth-child(1) { animation-delay: 0.1s; }
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.3s; }
+        .feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.2);
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.18), rgba(37, 99, 235, 0.18));
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .feature-title {
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .feature-description {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============= MODAL ============= */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(15px);
+            z-index: 200;
+            display: none;
+            align-items: flex-end;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal {
+            width: 100%;
+            background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+            border: 1px solid var(--border-light);
+            border-radius: 28px 28px 0 0;
+            padding: 32px 16px 48px;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideUp 0.3s ease;
+            backdrop-filter: blur(30px);
+            border-top: 2px solid var(--accent-primary);
+            position: relative;
+        }
+
+        .modal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--text-primary);
+        }
+
+        .btn-close {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 20px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(15px);
+        }
+
+        .btn-close:active {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(0.95);
+        }
+
+        /* ============= FORMS ============= */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            background: rgba(26, 40, 71, 0.6);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            font-size: 15px;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            background: rgba(0, 229, 255, 0.1);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+        }
+
+        .form-input::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        /* ============= PROGRESS ============= */
+        .progress-bar {
+            width: 100%;
+            height: 3px;
+            background: rgba(26, 40, 71, 0.8);
+            border-radius: 2px;
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+        }
+
+        /* ============= STEP ============= */
+        .step-content {
+            display: none;
+        }
+
+        .step-content.active {
+            display: block;
+            animation: slideUp 0.3s ease;
+        }
+
+        .step-title {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .step-subtitle {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .step-counter {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* ============= ALERTS ============= */
+        .alert {
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            margin-bottom: 16px;
+            border: 1px solid;
+            animation: slideUp 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .alert.success {
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--success);
+            border-color: var(--success);
+        }
+
+        .alert.error {
+            background: rgba(239, 68, 68, 0.12);
+            color: var(--danger);
+            border-color: var(--danger);
+        }
+
+        .alert.info {
+            background: rgba(0, 229, 255, 0.12);
+            color: var(--accent-primary);
+            border-color: var(--accent-primary);
+        }
+
+        /* ============= BUTTONS ============= */
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .btn-group-half {
+            flex: 1;
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* ============= CHECKBOX ============= */
+        input[type="checkbox"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-light);
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        input[type="checkbox"]:hover {
+            border-color: var(--accent-primary);
+        }
+
+        input[type="checkbox"]:checked {
+            background: var(--success);
+            border-color: var(--success);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .checkbox-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-top: 2px;
+        }
+
+        /* ============= DASHBOARD ============= */
+        .dashboard-header {
+            padding: 32px 16px;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(37, 99, 235, 0.12));
+            border-bottom: 1px solid var(--border-light);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dashboard-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+        }
+
+        .dashboard-title {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .dashboard-subtitle {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            padding: 24px 16px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(37, 99, 235, 0.1));
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(15px);
+            animation: slideUp 0.6s ease backwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        .card:nth-child(5) { animation-delay: 0.5s; }
+        .card:nth-child(6) { animation-delay: 0.6s; }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+            z-index: 2;
+        }
+
+        .card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.2);
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(37, 99, 235, 0.15));
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-content {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(0, 229, 255, 0.2);
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--accent-primary);
+            border: 1px solid var(--accent-primary);
+            margin-top: 8px;
+        }
+
+        .live-indicator {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+            animation: pulse 1.5s ease infinite;
+            box-shadow: 0 0 10px var(--success);
+        }
+
+        /* ============= RESPONSIVE ============= */
+        @media (min-width: 768px) {
+            .nav-top {
+                height: 64px;
+                padding: 0 24px;
+            }
+
+            .page {
+                padding-top: 64px;
+            }
+
+            .hero {
+                min-height: 70vh;
+                padding: 64px 32px;
+            }
+
+            .hero-title {
+                font-size: 48px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+                max-width: 600px;
+                margin: 0 auto;
+                margin-bottom: 32px;
+            }
+
+            .modal {
+                max-width: 520px;
+                border-radius: 24px;
+                margin: auto;
+            }
+
+            .modal-overlay {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .dashboard-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .dashboard-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="nav-top">
+        <div class="nav-content">
+            <div class="logo">
+                <span>⚡</span>
+                <span>ArbiSure</span>
+            </div>
+            <div class="nav-actions" id="navActions">
+                <button class="btn-nav btn-nav-primary" onclick="openAuthModal('login')">Connexion</button>
+            </div>
+        </div>
+    </nav>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">🎯 1xBet Guide</div>
-  <div class="nav-badge">Code: 1x_4244948</div>
-</nav>
+    <!-- Landing Page -->
+    <div id="landingPage" class="page active">
+        <div class="landing-container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1 class="hero-title">Détection IA d'Arbitrage Mondial</h1>
+                <p class="hero-subtitle">La plateforme révolutionnaire utilisant l'intelligence artificielle avancée pour identifier les opportunités de surebet en temps réel</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openAuthModal('signup')">Commencer Gratuitement</button>
+                    <button class="btn-secondary" onclick="scrollTo('.images-section')">Voir la Plateforme</button>
+                </div>
+            </section>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-eyebrow">
-    <div class="dot"></div>
-    Guide Officieux & Informatif
-  </div>
-  <h1>Bienvenue sur<br>ton guide <span>1xBet</span></h1>
-  <p>Conseils pratiques, code promo exclusif et astuces pour bien démarrer en toute sécurité.</p>
-  <a href="#code-promo" class="btn-primary">
-    ✦ Commencer maintenant
-  </a>
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    Défiler
-  </div>
-</div>
+            <!-- Images Section -->
+            <section class="images-section">
+                <div class="image-card">
+                    <div class="image-label">🔍 Arbitrage Sportif</div>
+                    <div class="image-wrapper">
+                        <img src="https://i.postimg.cc/HxCTysx4/file-00000000e28871f4b60aad2bff0cf2bd.png" alt="Arbitrage Sportif" loading="lazy">
+                    </div>
+                </div>
 
-<!-- CODE PROMO -->
-<section id="code-promo" class="reveal">
-  <div class="section-tag">🎁 Code Exclusif</div>
-  <div class="section-title">Ton code promo</div>
-  <div class="section-sub">Utilise ce code lors de ton inscription pour accéder aux bonus et configurer correctement ton compte.</div>
+                <div class="image-card">
+                    <div class="image-label">🤖 Surebet IA</div>
+                    <div class="image-wrapper">
+                        <img src="https://i.postimg.cc/9MpHwdsd/file-000000004c3471f4bf56d97d54f24e5e.png" alt="Surebet avec IA" loading="lazy">
+                    </div>
+                </div>
+            </section>
 
-  <div class="promo-wrap">
-    <div class="promo-label">Code promo à copier</div>
-    <span class="promo-code" id="promoCode">1x_4244948</span>
-    <div class="promo-btns">
-      <button class="btn-copy" onclick="copyCode()">
-        <span id="copyIcon">📋</span>
-        <span id="copyText">Copier le code</span>
-      </button>
-      <button class="btn-share" onclick="openShare()">
-        ↗ Partager
-      </button>
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">87K+</div>
+                        <div class="stat-label">Surebets/Jour</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">156</div>
+                        <div class="stat-label">Pays Couverts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2.4B</div>
+                        <div class="stat-label">Cotes Analysées</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">99.87%</div>
+                        <div class="stat-label">Précision IA</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <h2 class="section-title">Technologie Révolutionnaire</h2>
+                <p class="section-subtitle">Caractéristiques avancées pour traders professionnels</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <div class="feature-title">IA Générative</div>
+                        <div class="feature-description">Apprentissage continu et algorithmes ultra sophistiqués</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-title">Temps Réel 24/7</div>
+                        <div class="feature-description">Analyse milliseconde des cotes globales</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <div class="feature-title">Couverture Mondiale</div>
+                        <div class="feature-description">Tous les continents et bookmakers autorisés</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <div class="feature-title">100% Sécurisé</div>
+                        <div class="feature-description">Cryptage bancaire et protection premium</div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-  </div>
 
-  <div class="promo-note">
-    <strong>💡 Conseil :</strong> Entre ce code <em>lors de ton inscription</em> sur 1xBet pour bénéficier du bonus de bienvenue et configurer ton compte dans les meilleures conditions.
-  </div>
-</section>
+    <!-- Dashboard -->
+    <div id="dashboardPage" class="page">
+        <div class="dashboard-header">
+            <h2 class="dashboard-title">Plateforme Mondiale ArbiSure</h2>
+            <p class="dashboard-subtitle">Intelligence artificielle avancée en temps réel</p>
+        </div>
 
-<div class="divider"></div>
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-title"><span class="live-indicator"></span>Profil Utilisateur</div>
+                <div class="card-content">
+                    <p>Connecté : <strong id="dashboardUsername"></strong></p>
+                    <p style="margin-top: 8px; font-size: 12px; color: var(--text-tertiary);" id="lastLogin"></p>
+                </div>
+            </div>
 
-<!-- BONUS -->
-<section class="reveal">
-  <div class="section-tag">⭐ Avantages</div>
-  <div class="section-title">Bonus & Avantages</div>
-  <div class="section-sub">Ce qui t'attend en rejoignant 1xBet avec le code promo.</div>
+            <div class="card">
+                <div class="card-title">📊 Surebets Détectés</div>
+                <div class="card-content">
+                    <p style="font-size: 22px; font-weight: 900; color: var(--accent-primary); margin-bottom: 8px;">1,247</p>
+                    <span class="badge">Aujourd'hui</span>
+                </div>
+            </div>
 
-  <div class="cards-grid">
-    <div class="card">
-      <span class="card-icon">🎰</span>
-      <div class="card-title">Bonus de bienvenue</div>
-      <div class="card-text">Bonus attractif sur ton premier dépôt pour bien démarrer.</div>
+            <div class="card">
+                <div class="card-title">💰 Profit Potentiel</div>
+                <div class="card-content">
+                    <p style="font-size: 22px; font-weight: 900; color: var(--success); margin-bottom: 8px;">+28,450€</p>
+                    <p style="font-size: 12px;">Cette semaine</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><span class="live-indicator"></span>Scan IA Actif</div>
+                <div class="card-content">
+                    <p>Analyse intelligente en cours...</p>
+                    <p style="margin-top: 8px; font-size: 12px; color: var(--text-tertiary);">+34 nouvelles opportunités</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">🌐 Bookmakers Connectés</div>
+                <div class="card-content">
+                    <p>1xBet, Betclic, Winamax, Bet365...</p>
+                    <p style="margin-top: 8px; font-size: 12px; color: var(--text-tertiary);">145+ bookmakers actifs</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">⚙️ Contrôle Utilisateur</div>
+                <div class="card-content">
+                    <p>Paramètres et préférences avancées</p>
+                    <button class="btn-secondary" style="width: 100%; margin-top: 12px; padding: 10px 16px; font-size: 12px;" onclick="logout()">Déconnexion</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <span class="card-icon">🔄</span>
-      <div class="card-title">Promos régulières</div>
-      <div class="card-text">Des offres renouvelées chaque semaine pour les membres actifs.</div>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal-overlay" onclick="closeAuthModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <!-- LOGIN -->
+            <div id="loginStep" class="step-content active">
+                <div class="modal-header">
+                    <h2 class="modal-title">Connexion</h2>
+                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Nom d'utilisateur</label>
+                    <input type="text" class="form-input" id="loginUsername" placeholder="Votre nom d'utilisateur">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Mot de passe</label>
+                    <input type="password" class="form-input" id="loginPassword" placeholder="••••••••">
+                </div>
+
+                <button class="btn-primary" onclick="handleLogin()" style="width: 100%;">Se connecter</button>
+
+                <p style="text-align: center; margin-top: 20px; font-size: 13px; color: var(--text-secondary);">
+                    Pas de compte? <button onclick="switchMode('signup')" style="background: none; border: none; color: var(--accent-primary); cursor: pointer; font-weight: 700;">S'inscrire</button>
+                </p>
+            </div>
+
+            <!-- SIGNUP STEPS 1-6 (Simplified for brevity) -->
+            <div id="signupStep1" class="step-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Créer un compte</h2>
+                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
+                </div>
+
+                <div class="step-counter">Étape 1/6</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 16.67%;"></div></div>
+
+                <h3 class="step-title">Informations personnelles</h3>
+                <p class="step-subtitle">Commençons par vos informations de base</p>
+
+                <div class="form-group">
+                    <label class="form-label">Prénom</label>
+                    <input type="text" class="form-input" id="firstName" placeholder="Jean">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Nom</label>
+                    <input type="text" class="form-input" id="lastName" placeholder="Dupont">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" id="email" placeholder="jean@example.com">
+                </div>
+
+                <button class="btn-primary" onclick="nextStep(2)" style="width: 100%;">Suivant</button>
+            </div>
+
+            <div id="signupStep2" class="step-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Coordonnées</h2>
+                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
+                </div>
+
+                <div class="step-counter">Étape 2/6</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 33.33%;"></div></div>
+
+                <h3 class="step-title">Vos coordonnées</h3>
+                <p class="step-subtitle">Informations de contact</p>
+
+                <div class="form-group">
+                    <label class="form-label">Téléphone</label>
+                    <input type="tel" class="form-input" id="phone" placeholder="+33 6 12 34 56 78">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Adresse</label>
+                    <input type="text" class="form-input" id="address" placeholder="123 Rue de Paris">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Code postal</label>
+                    <input type="text" class="form-input" id="postal" placeholder="75000">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Ville</label>
+                    <input type="text" class="form-input" id="city" placeholder="Paris">
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn-secondary btn-group-half" onclick="prevStep(1)">Retour</button>
+                    <button class="btn-primary btn-group-half" onclick="nextStep(3)">Suivant</button>
+                </div>
+            </div>
+
+            <div id="signupStep3" class="step-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Vérification 1xBet</h2>
+                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
+                </div>
+
+                <div class="step-counter">Étape 3/6</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+
+                <h3 class="step-title">ID 1xBet</h3>
+                <p class="step-subtitle">Vérification sécurisée de votre compte</p>
+
+                <div class="alert info">ℹ️ Votre compte doit être créé avec le code promotionnel fourni</div>
+
+                <div class="form-group">
+                    <label class="form-label">ID 1xBet</label>
+                    <input type="text" class="form-input" id="onexbetId" placeholder="Votre ID 1xBet">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email 1xBet</label>
+                    <input type="email" class="form-input" id="onexbetEmail" placeholder="email@1xbet.com">
+                </div>
+
+                <button class="btn-primary" onclick="verify1xBet()" style="width: 100%; margin-bottom: 16px;">Vérifier</button>
+                <div id="verifyAlert"></div>
+
+                <div class="btn-group">
+                    <button class="btn-secondary btn-group-half" onclick="prevStep(2)">Retour</button>
+                    <button class="btn-primary btn-group-half" id="nextStep3Btn" disabled onclick="nextStep(4)">Suivant</button>
+                </div>
+            </div>
+
+            <div id="signupStep4" class="step-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Sécurité</h2>
+                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
+                </div>
+
+                <div class="step-counter">Étape 4/6</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 66.67%;"></div></div>
+
+                <h3 class="step-title">Mot de passe ArbiSure</h3>
+                <p class="step-subtitle">Sécurisez votre compte</p>
+
+                <div class="form-group">
+                    <label class="form-label">Nom d'utilisateur</label>
+                    <input type="text" class="form-input" id="username" placeholder="jean_dupont_123">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Mot de passe</label>
+                    <input type="password" class="form-input" id="password" placeholder="••••••••••••">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Confirmer mot de passe</label>
+                    <input type="password" class="form-input" id="passwordConfirm" placeholder="••••••••••••">
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn-secondary btn-group-half" onclick="prevStep(3)">Retour</button>
+                    <button class="btn-primary btn-group-half" onclick="nextStep(5)">Suivant</button>
+                </div>
+            </div>
+
+            <div id="signupStep5" class="step-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Vérification OTP</h2>
+                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
+                </div>
+
+                <div class="step-counter">Étape 5/6</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 83.33%;"></div></div>
+
+                <h3 class="step-title">Codes de vérification</h3>
+                <p class="step-subtitle">Vérifiez votre email et téléphone</p>
+
+                <div class="alert info">ℹ️ Codes envoyés à votre email et SMS</div>
+
+                <div class="form-group">
+                    <label class="form-label">Code email (6 chiffres)</label>
+                    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Code SMS (6 chiffres)</label>
+                    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn-secondary btn-group-half" onclick="prevStep(4)">Retour</button>
+                    <button class="btn-primary btn-group-half" onclick="nextStep(6)">Suivant</button>
+                </div>
+            </div>
+
+            <div id="signupStep6" class="step-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Conditions & Avertissements</h2>
+                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
+                </div>
+
+                <div class="step-counter">Étape 6/6</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+
+                <h3 class="step-title">Accepter les conditions</h3>
+                <p class="step-subtitle">Veuillez accepter pour continuer</p>
+
+                <div style="max-height: 150px; overflow-y: auto; margin-bottom: 20px; padding: 16px; background: rgba(0, 229, 255, 0.08); border: 1px solid var(--border-light); border-radius: 12px; font-size: 12px; line-height: 1.6;">
+                    <p style="margin-bottom: 8px;"><strong>⚠️ AVERTISSEMENT IMPORTANT</strong></p>
+                    <p>✓ Vous devez avoir au moins 18 ans</p>
+                    <p>✓ Les paris comportent des risques d'addiction</p>
+                    <p>✓ Ne pariez que l'argent vous pouvez perdre</p>
+                    <p>✓ Les bookmakers peuvent fermer votre compte</p>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree1">
+                    <label class="checkbox-label">J'ai au moins 18 ans et comprends les risques</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree2">
+                    <label class="checkbox-label">J'accepte les conditions et la politique</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree3">
+                    <label class="checkbox-label">J'accepte les avertissements sur les risques</label>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn-secondary btn-group-half" onclick="prevStep(5)">Retour</button>
+                    <button class="btn-primary btn-group-half" onclick="completeSignup()">Créer compte</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <span class="card-icon">⚡</span>
-      <div class="card-title">Large catalogue</div>
-      <div class="card-text">Sports, casino, esports : une expérience complète en un seul endroit.</div>
-    </div>
-    <div class="card">
-      <span class="card-icon">🌍</span>
-      <div class="card-title">Multi-devises</div>
-      <div class="card-text">Paiement dans de nombreuses devises et méthodes disponibles.</div>
-    </div>
-  </div>
-</section>
 
-<div class="divider"></div>
+    <script>
+        const state = {
+            user: null,
+            verified1xBet: false,
+            formData: {}
+        };
 
-<!-- IMPORTANT INFO -->
-<section class="reveal">
-  <div class="section-tag">⚠️ À Savoir</div>
-  <div class="section-title">Point important<br>sur les retraits</div>
-  <div class="section-sub">Quelques informations essentielles pour éviter les blocages courants.</div>
+        // Load user
+        window.addEventListener('load', () => {
+            const saved = localStorage.getItem('arbisureUser');
+            if (saved) {
+                state.user = JSON.parse(saved);
+                showDashboard();
+            }
+        });
 
-  <div class="info-box">
-    <div class="info-box-title">💳 Méthode dépôt = méthode retrait</div>
-    <p>Sur des plateformes comme 1xBet, les retraits doivent généralement être effectués avec la <strong>même méthode que le dépôt</strong>. Utiliser une méthode différente peut entraîner des retards ou des blocages.</p>
-  </div>
-  <div class="info-box" style="border-color:rgba(0,245,160,0.2);background:linear-gradient(135deg,rgba(0,245,160,0.05),rgba(0,245,160,0.02));">
-    <div class="info-box-title" style="color:var(--neon);">✅ Configuration dès le départ</div>
-    <p>Configurer correctement son compte <strong>dès l'inscription</strong> — notamment ses informations personnelles et sa méthode de paiement — peut éviter de nombreux problèmes ultérieurs.</p>
-  </div>
+        // AUTH MODAL
+        function openAuthModal(mode) {
+            document.getElementById('authModal').classList.add('active');
+            if (mode === 'login') {
+                showStep('loginStep');
+            } else {
+                showStep('signupStep1');
+            }
+        }
 
-  <div class="badge-row">
-    <div class="badge">Vérification d'identité</div>
-    <div class="badge">Cohérence des paiements</div>
-    <div class="badge">Compte complet</div>
-  </div>
-</section>
+        function closeAuthModal(e) {
+            if (e && e.target.id !== 'authModal') return;
+            document.getElementById('authModal').classList.remove('active');
+        }
 
-<div class="divider"></div>
+        function switchMode(mode) {
+            showStep(mode === 'signup' ? 'signupStep1' : 'loginStep');
+        }
 
-<!-- TIPS -->
-<section class="reveal">
-  <div class="section-tag">🧠 Stratégie</div>
-  <div class="section-title">Conseils pour<br>mieux parier</div>
-  <div class="section-sub">Des règles simples pour parier de façon responsable et éclairée.</div>
+        function showStep(stepId) {
+            document.querySelectorAll('.step-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(stepId).classList.add('active');
+            setTimeout(() => document.querySelector('.modal').scrollTop = 0, 100);
+        }
 
-  <div class="tips-list">
-    <div class="tip-item">
-      <div class="tip-num">1</div>
-      <div class="tip-content">
-        <strong>Commence petit</strong>
-        <span>Commence avec des mises modestes le temps de comprendre la plateforme.</span>
-      </div>
-    </div>
-    <div class="tip-item">
-      <div class="tip-num">2</div>
-      <div class="tip-content">
-        <strong>Gère ton budget</strong>
-        <span>Fixe une limite de jeu quotidienne ou hebdomadaire et respecte-la.</span>
-      </div>
-    </div>
-    <div class="tip-item">
-      <div class="tip-num">3</div>
-      <div class="tip-content">
-        <strong>Analyse avant de miser</strong>
-        <span>Prends le temps d'analyser les matchs, les statistiques et les cotes.</span>
-      </div>
-    </div>
-    <div class="tip-item">
-      <div class="tip-num">4</div>
-      <div class="tip-content">
-        <strong>Évite les décisions émotionnelles</strong>
-        <span>Ne mise jamais sous le coup de la colère, de la frustration ou de l'euphorie.</span>
-      </div>
-    </div>
-    <div class="tip-item">
-      <div class="tip-num">5</div>
-      <div class="tip-content">
-        <strong>Ne mise pas tout d'un coup</strong>
-        <span>Répartis tes mises plutôt que de tout risquer sur un seul pari.</span>
-      </div>
-    </div>
-  </div>
-</section>
+        function nextStep(num) {
+            if (!validateStep(num - 1)) return;
+            showStep(`signupStep${num}`);
+        }
 
-<div class="divider"></div>
+        function prevStep(num) {
+            showStep(`signupStep${num}`);
+        }
 
-<!-- SIMULATOR -->
-<section class="reveal">
-  <div class="section-tag">🧮 Outil</div>
-  <div class="section-title">Simulateur de gains</div>
-  <div class="section-sub">Estime tes gains potentiels avant de miser. À titre indicatif uniquement.</div>
+        function validateStep(step) {
+            if (step === 1) {
+                if (!document.getElementById('firstName').value || !document.getElementById('lastName').value) {
+                    alert('Remplissez tous les champs');
+                    return false;
+                }
+                state.formData.firstName = document.getElementById('firstName').value;
+                state.formData.lastName = document.getElementById('lastName').value;
+            } else if (step === 2) {
+                if (!document.getElementById('phone').value) {
+                    alert('Remplissez tous les champs');
+                    return false;
+                }
+                state.formData.phone = document.getElementById('phone').value;
+            } else if (step === 3) {
+                if (!state.verified1xBet) {
+                    alert('Vérifiez votre compte 1xBet');
+                    return false;
+                }
+            } else if (step === 4) {
+                const pwd = document.getElementById('password').value;
+                if (pwd.length < 8 || pwd !== document.getElementById('passwordConfirm').value) {
+                    alert('Les mots de passe ne correspondent pas');
+                    return false;
+                }
+            }
+            return true;
+        }
 
-  <div class="sim-wrap">
-    <div class="sim-row">
-      <div>
-        <div class="sim-label">💰 Montant de la mise (€)</div>
-        <input class="sim-input" type="number" id="simMise" placeholder="Ex: 10" min="1" max="10000" value="10">
-      </div>
-      <div>
-        <div class="sim-label">📊 Cote (ex: 1.85)</div>
-        <input class="sim-input" type="number" id="simCote" placeholder="Ex: 1.85" min="1.01" step="0.01" value="1.85">
-      </div>
-    </div>
-    <button class="btn-calc" onclick="calculate()">Calculer le gain potentiel</button>
-    <div class="sim-result" id="simResult" style="display:none">
-      <div class="sim-desc">Gain potentiel</div>
-      <div class="sim-gain" id="simGain">—</div>
-      <div class="sim-desc" id="simProfit"></div>
-      <div class="sim-warning">⚠️ Simulation indicative. Les paris comportent des risques. Jouez de façon responsable.</div>
-    </div>
-  </div>
-</section>
+        // 1xBET VERIFICATION
+        function verify1xBet() {
+            const id = document.getElementById('onexbetId').value.trim();
+            const email = document.getElementById('onexbetEmail').value.trim();
+            const alert = document.getElementById('verifyAlert');
 
-<div class="divider"></div>
+            if (!id || !email) {
+                alert.innerHTML = '<div class="alert error">Remplissez tous les champs</div>';
+                return;
+            }
 
-<!-- SECURITY -->
-<section class="reveal">
-  <div class="section-tag">🔒 Sécurité</div>
-  <div class="section-title">Protège ton compte</div>
-  <div class="section-sub">Quelques bonnes pratiques pour sécuriser ton compte et tes données.</div>
+            alert.innerHTML = '<div class="alert info">⏳ Vérification sécurisée en cours...</div>';
 
-  <div class="cards-grid">
-    <div class="card">
-      <span class="card-icon">🔑</span>
-      <div class="card-title">Mot de passe fort</div>
-      <div class="card-text">Utilise un mot de passe unique, long et complexe pour ton compte.</div>
-    </div>
-    <div class="card">
-      <span class="card-icon">✏️</span>
-      <div class="card-title">Infos exactes</div>
-      <div class="card-text">Vérifie que tes informations d'identité sont correctes dès l'inscription.</div>
-    </div>
-    <div class="card">
-      <span class="card-icon">🚫</span>
-      <div class="card-title">Ne partage pas</div>
-      <div class="card-text">Ne communique jamais tes identifiants à une tierce personne.</div>
-    </div>
-    <div class="card">
-      <span class="card-icon">✅</span>
-      <div class="card-title">Plateforme officielle</div>
-      <div class="card-text">Accède uniquement aux sites officiels et vérifie l'URL dans le navigateur.</div>
-    </div>
-  </div>
-</section>
+            setTimeout(() => {
+                const isValid = id.length > 3 && email.includes('@') && id.startsWith('1234');
+                
+                if (isValid) {
+                    alert.innerHTML = '<div class="alert success">✓ Compte vérifié avec succès</div>';
+                    state.verified1xBet = true;
+                    state.formData.onexbetId = id;
+                    document.getElementById('nextStep3Btn').disabled = false;
+                } else {
+                    alert.innerHTML = '<div class="alert error">✕ Compte introuvable ou non éligible à la validation sécurisée</div>';
+                    state.verified1xBet = false;
+                }
+            }, 2000);
+        }
 
-<div class="divider"></div>
+        // LOGIN
+        function handleLogin() {
+            const user = document.getElementById('loginUsername').value;
+            if (!user) {
+                alert('Remplissez les champs');
+                return;
+            }
+            setTimeout(() => {
+                state.user = { username: user, loginTime: new Date().toLocaleString('fr-FR'), firstName: user };
+                localStorage.setItem('arbisureUser', JSON.stringify(state.user));
+                closeAuthModal();
+                showDashboard();
+            }, 600);
+        }
 
-<!-- PROBLEMS -->
-<section class="reveal">
-  <div class="section-tag">⛔ Problèmes courants</div>
-  <div class="section-title">Difficultés possibles</div>
-  <div class="section-sub">Soyons transparents : certains problèmes peuvent survenir. Voici les plus fréquents.</div>
+        // SIGNUP COMPLETE
+        function completeSignup() {
+            if (!document.getElementById('agree1').checked || !document.getElementById('agree2').checked || !document.getElementById('agree3').checked) {
+                alert('Acceptez toutes les conditions');
+                return;
+            }
+            setTimeout(() => {
+                const newUser = {
+                    username: document.getElementById('username').value,
+                    firstName: state.formData.firstName,
+                    loginTime: new Date().toLocaleString('fr-FR')
+                };
+                state.user = newUser;
+                localStorage.setItem('arbisureUser', JSON.stringify(newUser));
+                alert('✓ Compte créé avec succès!');
+                closeAuthModal();
+                showDashboard();
+            }, 800);
+        }
 
-  <div class="pb-list" style="margin-bottom:28px;">
-    <div class="pb-item"><span class="ico">⏳</span> Retards de retrait (vérification de compte en cours)</div>
-    <div class="pb-item"><span class="ico">💸</span> Dépôts non crédités immédiatement (délai bancaire)</div>
-    <div class="pb-item"><span class="ico">🔒</span> Restrictions de paiement selon la méthode choisie</div>
-  </div>
+        // DASHBOARD
+        function showDashboard() {
+            document.getElementById('landingPage').classList.remove('active');
+            document.getElementById('dashboardPage').classList.add('active');
+            document.getElementById('dashboardUsername').textContent = state.user.firstName || state.user.username;
+            document.getElementById('lastLogin').textContent = `Connecté: ${state.user.loginTime}`;
+        }
 
-  <div class="section-tag" style="color:var(--neon);">✅ Solutions recommandées</div>
-  <div style="height:12px"></div>
-  <div style="display:flex;flex-direction:column;gap:10px;">
-    <div class="sol-item">
-      <span class="ico">💡</span>
-      <div class="sol-text">
-        <strong>Même méthode dépôt/retrait</strong>
-        <span>Utilise toujours la même méthode pour éviter les blocages automatiques.</span>
-      </div>
-    </div>
-    <div class="sol-item">
-      <span class="ico">🪪</span>
-      <div class="sol-text">
-        <strong>Vérification de compte complète</strong>
-        <span>Un compte vérifié (KYC) traite les retraits beaucoup plus rapidement.</span>
-      </div>
-    </div>
-    <div class="sol-item">
-      <span class="ico">🎧</span>
-      <div class="sol-text">
-        <strong>Contacter le support</strong>
-        <span>Le support 1xBet est disponible 24h/24 via chat ou email pour tout problème.</span>
-      </div>
-    </div>
-    <div class="sol-item">
-      <span class="ico">🎁</span>
-      <div class="sol-text">
-        <strong>Code promo à l'inscription</strong>
-        <span>Utiliser le code <strong>1x_4244948</strong> dès l'inscription assure une meilleure configuration initiale du compte.</span>
-      </div>
-    </div>
-  </div>
-</section>
+        function logout() {
+            if (confirm('Déconnexion?')) {
+                state.user = null;
+                localStorage.removeItem('arbisureUser');
+                document.getElementById('dashboardPage').classList.remove('active');
+                document.getElementById('landingPage').classList.add('active');
+            }
+        }
 
-<div class="divider"></div>
-
-<!-- FAQ -->
-<section class="reveal">
-  <div class="section-tag">❓ FAQ</div>
-  <div class="section-title">Questions fréquentes</div>
-  <div class="section-sub">Tout ce que tu dois savoir avant de commencer.</div>
-
-  <div class="faq-list">
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        Où entrer le code promo lors de l'inscription ?
-        <span class="arrow">▾</span>
-      </div>
-      <div class="faq-a"><div class="faq-a-inner">Le code promo s'entre dans le champ dédié lors de la création de ton compte. Il y a généralement une case "Code promo" visible dans le formulaire d'inscription. Entre <strong>1x_4244948</strong> à cet endroit.</div></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        Pourquoi mon retrait est-il en attente ?
-        <span class="arrow">▾</span>
-      </div>
-      <div class="faq-a"><div class="faq-a-inner">Les retraits peuvent être retardés pour plusieurs raisons : vérification d'identité en cours, méthode de paiement différente du dépôt, ou temps de traitement bancaire standard. En général, un compte vérifié avec la bonne méthode est traité en 24-48h.</div></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        Le code promo garantit-il de gagner ?
-        <span class="arrow">▾</span>
-      </div>
-      <div class="faq-a"><div class="faq-a-inner">Non, aucun code promo ne garantit des gains. Le code <strong>1x_4244948</strong> donne accès au bonus de bienvenue et aide à configurer le compte correctement, mais les paris restent soumis à l'aléa. Jouez de façon responsable.</div></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        Quelle méthode de dépôt est recommandée ?
-        <span class="arrow">▾</span>
-      </div>
-      <div class="faq-a"><div class="faq-a-inner">Choisis une méthode que tu peux utiliser aussi bien pour déposer que retirer. Les portefeuilles électroniques (Skrill, Neteller, etc.) ou les cartes bancaires sont généralement les plus rapides. L'important est de rester cohérent.</div></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        Ce site est-il officiel ?
-        <span class="arrow">▾</span>
-      </div>
-      <div class="faq-a"><div class="faq-a-inner">Non, ce site est un guide informatif non officiel. Il ne remplace pas le support officiel de 1xBet ni ses conditions générales. Pour toute question officielle, consulte le site 1xBet directement.</div></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- CTA -->
-<div class="cta-section reveal">
-  <div class="cta-glow"></div>
-  <div class="section-tag">🚀 Prêt ?</div>
-  <h2>Lance-toi avec le<br>bon code promo</h2>
-  <p>Crée ton compte avec le code <strong style="color:var(--neon)">1x_4244948</strong> et bénéficie du bonus de bienvenue.</p>
-  <div class="cta-btns">
-    <a href="https://1xbet.com/registration" target="_blank" rel="noopener" class="btn-cta-main">
-      ✦ Créer mon compte avec 1x_4244948
-    </a>
-    <a href="https://wa.me/?text=Voici le code promo 1xBet: 1x_4244948 - Guide complet: [votre lien]" target="_blank" class="btn-wa">
-      <span>💬</span> Contacter sur WhatsApp
-    </a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div style="margin-bottom:12px;color:var(--neon);font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;">🎯 1xBet Guide Informatif</div>
-  <p>Ce site est un <strong>guide informatif non officiel</strong> lié à 1xBet. Il n'est ni affilié, ni mandaté, ni approuvé officiellement par 1xBet.<br><br>
-  Les paris comportent des risques. Jouez de façon <strong>responsable</strong>. Si vous ou un proche pensez avoir un problème avec les jeux d'argent, consultez un professionnel de santé.<br><br>
-  <span style="font-size:0.7rem;opacity:0.6;">Le code promo 1x_4244948 est soumis aux conditions générales de 1xBet. Les informations présentées sont à titre indicatif et peuvent changer.</span>
-  </p>
-</footer>
-
-<!-- FLOATING WA -->
-<a href="https://wa.me/?text=Voici mon code promo 1xBet: 1x_4244948" target="_blank" class="fab-wa" title="WhatsApp">
-  <div class="fab-pulse"></div>
-  💬
-</a>
-
-<!-- TOAST -->
-<div class="copy-toast" id="copyToast">✅ Code copié !</div>
-
-<!-- SHARE MODAL -->
-<div class="modal-overlay" id="shareModal" onclick="closeShareIfOutside(event)">
-  <div class="modal-sheet">
-    <div class="modal-handle"></div>
-    <div class="modal-title">Partager le code promo</div>
-    <div class="share-grid">
-      <a href="https://wa.me/?text=Utilise ce code promo 1xBet → 1x_4244948 pour ton inscription !" target="_blank" class="share-btn" onclick="closeShare()">
-        <span>📲</span>WhatsApp
-      </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://votresite.com&quote=Code promo 1xBet: 1x_4244948" target="_blank" class="share-btn" onclick="closeShare()">
-        <span>👤</span>Facebook
-      </a>
-      <a href="https://t.me/share/url?url=https://votresite.com&text=Code promo 1xBet: 1x_4244948" target="_blank" class="share-btn" onclick="closeShare()">
-        <span>✈️</span>Telegram
-      </a>
-      <a href="https://twitter.com/intent/tweet?text=Code promo 1xBet: 1x_4244948 - Profite du bonus dès l'inscription !" target="_blank" class="share-btn" onclick="closeShare()">
-        <span>🐦</span>Twitter/X
-      </a>
-    </div>
-    <button class="modal-close" onclick="closeShare()">Fermer</button>
-  </div>
-</div>
-
-<script>
-  // ——— COPY CODE ———
-  function copyCode() {
-    const code = '1x_4244948';
-    navigator.clipboard.writeText(code).then(() => {
-      document.getElementById('copyIcon').textContent = '✅';
-      document.getElementById('copyText').textContent = 'Code copié !';
-      const toast = document.getElementById('copyToast');
-      toast.classList.add('show');
-      setTimeout(() => {
-        toast.classList.remove('show');
-        document.getElementById('copyIcon').textContent = '📋';
-        document.getElementById('copyText').textContent = 'Copier le code';
-      }, 2500);
-    }).catch(() => {
-      // fallback
-      const el = document.createElement('textarea');
-      el.value = code;
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand('copy');
-      document.body.removeChild(el);
-      document.getElementById('copyText').textContent = 'Code copié !';
-      setTimeout(() => document.getElementById('copyText').textContent = 'Copier le code', 2500);
-    });
-  }
-
-  // ——— SHARE MODAL ———
-  function openShare() {
-    document.getElementById('shareModal').classList.add('show');
-    document.body.style.overflow='hidden';
-  }
-  function closeShare() {
-    document.getElementById('shareModal').classList.remove('show');
-    document.body.style.overflow='';
-  }
-  function closeShareIfOutside(e) {
-    if(e.target === document.getElementById('shareModal')) closeShare();
-  }
-
-  // ——— SIMULATOR ———
-  function calculate() {
-    const mise = parseFloat(document.getElementById('simMise').value);
-    const cote = parseFloat(document.getElementById('simCote').value);
-    if(!mise || !cote || mise <= 0 || cote < 1) return;
-    const gain = (mise * cote).toFixed(2);
-    const profit = (mise * cote - mise).toFixed(2);
-    document.getElementById('simGain').textContent = gain + ' €';
-    document.getElementById('simProfit').textContent = 'Mise: ' + mise + ' € · Profit net: +' + profit + ' €';
-    const res = document.getElementById('simResult');
-    res.style.display = 'block';
-    res.style.animation = 'fadeUp 0.4s ease';
-  }
-
-  // ——— FAQ ———
-  function toggleFaq(el) {
-    const item = el.parentElement;
-    const wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-    if(!wasOpen) item.classList.add('open');
-  }
-
-  // ——— SCROLL REVEAL ———
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if(e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold:0.1, rootMargin:'0px 0px -40px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  // ——— SMOOTH SCROLL ———
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      const target = document.querySelector(a.getAttribute('href'));
-      if(target) target.scrollIntoView({ behavior:'smooth', block:'start' });
-    });
-  });
-
-  // ——— KEYBOARD ———
-  document.addEventListener('keydown', e => {
-    if(e.key === 'Escape') closeShare();
-  });
-</script>
+        function scrollTo(selector) {
+            document.querySelector(selector)?.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
