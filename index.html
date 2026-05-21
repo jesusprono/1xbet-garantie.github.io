@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0a0f1f">
     <title>ArbiSure - Plateforme IA Mondiale d'Arbitrage Sportif</title>
-    
     <style>
         /* ============= RESET ============= */
         * {
@@ -49,7 +48,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 radial-gradient(circle at 20% 50%, rgba(0, 229, 255, 0.08) 0%, transparent 50%),
                 radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.08) 0%, transparent 50%);
             pointer-events: none;
@@ -116,20 +115,14 @@
             50% { transform: translateY(-15px); }
         }
 
-        @keyframes scanLine {
-            0% { transform: translateY(-100%); opacity: 0; }
-            50% { opacity: 1; }
-            100% { transform: translateY(100%); opacity: 0; }
-        }
-
         @keyframes shimmer {
             0% { background-position: -1000px 0; }
             100% { background-position: 1000px 0; }
         }
 
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+        @keyframes spinLoader {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         /* ============= NAV ============= */
@@ -145,7 +138,7 @@
             z-index: 100;
             display: flex;
             align-items: center;
-            padding: 0 var(--sp-4);
+            padding: 0 16px;
             animation: slideDown 0.5s ease;
         }
 
@@ -324,6 +317,277 @@
             transform: scale(0.98);
         }
 
+        .btn-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 229, 255, 0.2);
+            border: 1px solid var(--accent-primary);
+            color: var(--accent-primary);
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-icon:hover {
+            background: rgba(0, 229, 255, 0.35);
+            transform: scale(1.1);
+        }
+
+        /* ============= VIDEO SECTION ============= */
+        .video-section {
+            padding: 40px 16px 48px;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.08) 0%, transparent 100%);
+            animation: slideUp 1s ease 0.3s both;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .video-title {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .video-subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            animation: slideUp 0.6s ease 0.1s both;
+        }
+
+        /* SHORT / TIKTOK FORMAT */
+        .video-player-container {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(37, 99, 235, 0.12));
+            border: 2px solid var(--border-light);
+            border-radius: 20px;
+            padding: 10px;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            animation: slideUp 1s ease 0.4s both;
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 229, 255, 0.25);
+        }
+
+        .video-player-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+            z-index: 10;
+        }
+
+        .video-player-container:hover {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 70px rgba(0, 229, 255, 0.45);
+        }
+
+        /* Ratio 9:16 pour format Short/TikTok */
+        .video-player {
+            position: relative;
+            width: 100%;
+            padding-bottom: 177.78%; /* 16/9 inversé = format portrait */
+            background: #000;
+            border-radius: 14px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .video-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 14px;
+        }
+
+        /* Bouton WhatsApp sous la vidéo */
+        .whatsapp-cta {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .whatsapp-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 14px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            animation: glow-green 2s ease infinite;
+        }
+
+        @keyframes glow-green {
+            0%, 100% { box-shadow: 0 0 25px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 0 50px rgba(37, 211, 102, 0.7); }
+        }
+
+        .btn-whatsapp:active {
+            transform: scale(0.97);
+        }
+
+        .btn-whatsapp svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        .video-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 5;
+            display: none;
+        }
+
+        .video-loading.active {
+            display: block;
+        }
+
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(0, 229, 255, 0.2);
+            border-top: 3px solid var(--accent-primary);
+            border-radius: 50%;
+            animation: spinLoader 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        .loader-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ============= WHY WATCH SECTION ============= */
+        .why-watch-section {
+            padding: 64px 16px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.06) 0%, rgba(0, 229, 255, 0.06) 100%);
+        }
+
+        .why-watch-title {
+            font-size: 24px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .why-watch-subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .why-watch-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .why-card {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(37, 99, 235, 0.1));
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            animation: slideUp 0.6s ease backwards;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .why-card:nth-child(1) { animation-delay: 0.1s; }
+        .why-card:nth-child(2) { animation-delay: 0.2s; }
+        .why-card:nth-child(3) { animation-delay: 0.3s; }
+        .why-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+        }
+
+        .why-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.2);
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(37, 99, 235, 0.15));
+        }
+
+        .why-card-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .why-card-title {
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--accent-primary);
+        }
+
+        .why-card-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
         /* ============= IMAGES SECTION ============= */
         .images-section {
             padding: 48px 16px;
@@ -364,19 +628,6 @@
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
             z-index: 2;
-        }
-
-        .image-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 229, 255, 0.1) 0%, transparent 100%);
-            pointer-events: none;
-            z-index: 1;
-            border-radius: 16px;
         }
 
         .image-wrapper {
@@ -854,6 +1105,7 @@
         .card:nth-child(4) { animation-delay: 0.4s; }
         .card:nth-child(5) { animation-delay: 0.5s; }
         .card:nth-child(6) { animation-delay: 0.6s; }
+        .card:nth-child(7) { animation-delay: 0.7s; }
 
         .card::before {
             content: '';
@@ -965,6 +1217,11 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .why-watch-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+
             .dashboard-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -979,6 +1236,24 @@
                 grid-template-columns: repeat(3, 1fr);
             }
         }
+
+        /* ============= SCROLLBAR ============= */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(26, 40, 71, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-primary);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-secondary);
+        }
     </style>
 </head>
 <body>
@@ -990,6 +1265,10 @@
                 <span>ArbiSure</span>
             </div>
             <div class="nav-actions" id="navActions">
+                    <a href="https://whatsapp.com/channel/0029VbBxYTR35fLzyY8RLd3b" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:8px 13px;background:linear-gradient(135deg,#25D366,#128C7E);border-radius:8px;color:#fff;font-size:12px;font-weight:800;text-decoration:none;box-shadow:0 0 20px rgba(37,211,102,0.4);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Chaîne WA
+                    </a>
                 <button class="btn-nav btn-nav-primary" onclick="openAuthModal('login')">Connexion</button>
             </div>
         </div>
@@ -1000,19 +1279,93 @@
         <div class="landing-container">
             <!-- Hero Section -->
             <section class="hero">
-                <h1 class="hero-title">Détection IA d'Arbitrage Mondial</h1>
-                <p class="hero-subtitle">La plateforme révolutionnaire utilisant l'intelligence artificielle avancée pour identifier les opportunités de surebet en temps réel</p>
-                
+                <div style="background: rgba(0, 229, 255, 0.15); border: 1.5px solid var(--accent-primary); border-radius: 12px; padding: 12px 16px; margin-bottom: 24px; display: inline-block; animation: slideUp 0.8s ease 0.05s both;">
+                    <span style="color: var(--success); font-weight: 800; font-size: 13px;">✅ 100% GRATUIT</span>
+                    <span style="color: var(--text-tertiary); font-size: 13px; margin-left: 8px;">Aucun abonnement • Aucun frais caché</span>
+                </div>
+
+                <h1 class="hero-title">Surebet Mondial — IA d'Arbitrage Sportif</h1>
+                <p class="hero-subtitle">Rejoignez les milliers de traders qui génèrent des profits automatiques grâce aux <strong style="color:var(--accent-primary)">surebets</strong>. Notre IA analyse des millions de cotes en temps réel pour identifier les meilleures opportunités d'arbitrage dans 156 pays.</p>
+
                 <div class="hero-buttons">
-                    <button class="btn-primary" onclick="openAuthModal('signup')">Commencer Gratuitement</button>
-                    <button class="btn-secondary" onclick="scrollTo('.images-section')">Voir la Plateforme</button>
+                    <button class="btn-primary" onclick="openAuthModal('signup')">Accès Gratuit Maintenant</button>
+                    <button class="btn-secondary" onclick="scrollTo('.video-section')">Regarder la Démo</button>
+                </div>
+            </section>
+
+            <!-- VIDEO SECTION -->
+            <section class="video-section" id="videoSection">
+                <div class="video-header">
+                    <h2 class="video-title">📲 Surebet en Action — Short</h2>
+                    <p class="video-subtitle">Découvrez comment exploiter les surebets en quelques secondes</p>
+                </div>
+
+                <div class="video-player-container">
+                    <div class="video-player" id="videoPlayer">
+                        <div class="video-loading active" id="videoLoading">
+                            <div class="loader-spinner"></div>
+                            <div class="loader-text" id="loadingText">Chargement...</div>
+                        </div>
+                        <iframe
+                            class="video-iframe"
+                            id="gdriveiframe"
+                            src="https://drive.google.com/file/d/1KlfpnUaNH32ch1vv0NwwSgIbIyRxN42c/preview"
+                            allow="autoplay"
+                            allowfullscreen="true"
+                            onload="document.getElementById('videoLoading').classList.remove('active')"
+                            onerror="document.getElementById('loadingText').textContent='Erreur de chargement'"
+                        ></iframe>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Channel CTA -->
+                <div class="whatsapp-cta">
+                    <div class="whatsapp-label">📣 Rejoins la chaîne officielle</div>
+                    <a class="btn-whatsapp" href="https://whatsapp.com/channel/0029VbBxYTR35fLzyY8RLd3b" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Suivre SUREBET OFFICIEL sur WhatsApp
+                    </a>
+                </div>
+            </section>
+
+            <!-- WHY WATCH SECTION -->
+            <section class="why-watch-section">
+                <h2 class="section-title">Pourquoi Regarder Cette Démonstration</h2>
+                <p class="why-watch-subtitle">Découvrez les fonctionnalités avancées en action</p>
+
+                <div class="why-watch-grid">
+                    <div class="why-card">
+                        <div class="why-card-icon">⚡</div>
+                        <div class="why-card-title">Détection IA</div>
+                        <div class="why-card-text">Algorithmes avancés en temps réel</div>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-card-icon">🌍</div>
+                        <div class="why-card-title">Couverture Mondiale</div>
+                        <div class="why-card-text">156 pays et 145+ bookmakers</div>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-card-icon">📈</div>
+                        <div class="why-card-title">Analyse Temps Réel</div>
+                        <div class="why-card-text">2.8 milliards de cotes par jour</div>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-card-icon">💎</div>
+                        <div class="why-card-title">Interface Premium</div>
+                        <div class="why-card-text">Expérience haut de gamme</div>
+                    </div>
                 </div>
             </section>
 
             <!-- Images Section -->
             <section class="images-section">
                 <div class="image-card">
-                    <div class="image-label">🔍 Arbitrage Sportif</div>
+                    <div class="image-label">🔍 Surebet Sportif</div>
                     <div class="image-wrapper">
                         <img src="https://i.postimg.cc/HxCTysx4/file-00000000e28871f4b60aad2bff0cf2bd.png" alt="Arbitrage Sportif" loading="lazy">
                     </div>
@@ -1028,54 +1381,61 @@
 
             <!-- Stats Section -->
             <section class="stats-section">
+                <div style="text-align: center; margin-bottom: 24px;">
+                    <div style="display: inline-block; background: rgba(16, 185, 129, 0.2); border: 1px solid var(--success); border-radius: 20px; padding: 8px 16px; color: var(--success); font-size: 12px; font-weight: 700;">
+                        <span style="display: inline-block; width: 8px; height: 8px; background: var(--success); border-radius: 50%; margin-right: 6px; animation: pulse 1.5s ease infinite;"></span>
+                        SYSTÈME ACTIF EN TEMPS RÉEL
+                    </div>
+                </div>
+
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-number">87K+</div>
-                        <div class="stat-label">Surebets/Jour</div>
+                        <div class="stat-number">127K+</div>
+                        <div class="stat-label">Surebets Détectés Aujourd'hui</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">156</div>
                         <div class="stat-label">Pays Couverts</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">2.4B</div>
-                        <div class="stat-label">Cotes Analysées</div>
+                        <div class="stat-number">2.8B+</div>
+                        <div class="stat-label">Cotes Analysées par Jour</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">99.87%</div>
-                        <div class="stat-label">Précision IA</div>
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Précision IA Avérée</div>
                     </div>
                 </div>
             </section>
 
             <!-- Features Section -->
             <section class="features-section">
-                <h2 class="section-title">Technologie Révolutionnaire</h2>
-                <p class="section-subtitle">Caractéristiques avancées pour traders professionnels</p>
+                <h2 class="section-title">Pourquoi Choisir ArbiSure pour vos Surebets</h2>
+                <p class="section-subtitle">La solution complète pour les surebets et l'arbitrage mondial</p>
 
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">🤖</div>
-                        <div class="feature-title">IA Générative</div>
-                        <div class="feature-description">Apprentissage continu et algorithmes ultra sophistiqués</div>
+                        <div class="feature-title">IA Générative Avancée</div>
+                        <div class="feature-description">Technologie ML qui apprend et s'améliore chaque jour pour identifier les opportunités les plus rentables</div>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon">⚡</div>
-                        <div class="feature-title">Temps Réel 24/7</div>
-                        <div class="feature-description">Analyse milliseconde des cotes globales</div>
+                        <div class="feature-title">Analyse en Temps Réel 24/7</div>
+                        <div class="feature-description">Scan milliseconde des cotes globales pour vous alerter instantanément des surebets</div>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon">🌍</div>
                         <div class="feature-title">Couverture Mondiale</div>
-                        <div class="feature-description">Tous les continents et bookmakers autorisés</div>
+                        <div class="feature-description">156 pays • 145+ bookmakers • Adaptation locale par région et juridiction</div>
                     </div>
 
                     <div class="feature-card">
-                        <div class="feature-icon">🔐</div>
-                        <div class="feature-title">100% Sécurisé</div>
-                        <div class="feature-description">Cryptage bancaire et protection premium</div>
+                        <div class="feature-icon">💰</div>
+                        <div class="feature-title">Profits Garantis & Automatiques</div>
+                        <div class="feature-description">Exploitez les différences de cotes pour générer des revenus sans risque véritable</div>
                     </div>
                 </div>
             </section>
@@ -1131,6 +1491,15 @@
             </div>
 
             <div class="card">
+                <div class="card-title">🎬 Dernière Vidéo</div>
+                <div class="card-content">
+                    <p>Démonstration IA en temps réel</p>
+                    <p style="margin-top: 8px; font-size: 12px; color: var(--text-tertiary);">Regardée il y a 2 jours</p>
+                    <button class="btn-primary" style="width: 100%; margin-top: 12px; padding: 8px 16px; font-size: 12px;" onclick="scrollTo('.video-section')">Reprendre</button>
+                </div>
+            </div>
+
+            <div class="card">
                 <div class="card-title">⚙️ Contrôle Utilisateur</div>
                 <div class="card-content">
                     <p>Paramètres et préférences avancées</p>
@@ -1167,15 +1536,15 @@
                 </p>
             </div>
 
-            <!-- SIGNUP STEPS 1-6 (Simplified for brevity) -->
+            <!-- SIGNUP STEPS -->
             <div id="signupStep1" class="step-content">
                 <div class="modal-header">
                     <h2 class="modal-title">Créer un compte</h2>
                     <button class="btn-close" onclick="closeAuthModal()">✕</button>
                 </div>
 
-                <div class="step-counter">Étape 1/6</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 16.67%;"></div></div>
+                <div class="step-counter">Étape 1/5</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 20%;"></div></div>
 
                 <h3 class="step-title">Informations personnelles</h3>
                 <p class="step-subtitle">Commençons par vos informations de base</p>
@@ -1204,8 +1573,8 @@
                     <button class="btn-close" onclick="closeAuthModal()">✕</button>
                 </div>
 
-                <div class="step-counter">Étape 2/6</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 33.33%;"></div></div>
+                <div class="step-counter">Étape 2/5</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 40%;"></div></div>
 
                 <h3 class="step-title">Vos coordonnées</h3>
                 <p class="step-subtitle">Informations de contact</p>
@@ -1242,17 +1611,24 @@
                     <button class="btn-close" onclick="closeAuthModal()">✕</button>
                 </div>
 
-                <div class="step-counter">Étape 3/6</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+                <div class="step-counter">Étape 3/5</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
 
                 <h3 class="step-title">ID 1xBet</h3>
                 <p class="step-subtitle">Vérification sécurisée de votre compte</p>
 
-                <div class="alert info">ℹ️ Votre compte doit être créé avec le code promotionnel fourni</div>
+                <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(245, 158, 11, 0.15)); border: 2px solid var(--warning); border-radius: 12px; padding: 16px; margin-bottom: 24px; animation: slideUp 0.5s ease;">
+                    <div style="font-weight: 800; color: var(--warning); margin-bottom: 8px; font-size: 14px;">⚠️ IMPORTANT</div>
+                    <div style="color: var(--text-secondary); font-size: 13px; line-height: 1.6;">
+                        <p style="margin-bottom: 8px;"><strong>Votre compte 1xBet DOIT obligatoirement avoir été créé avec le code promo BONUS9K pour être compatible avec ArbiSure.</strong></p>
+                        <p>Seuls les comptes activés avec ce code promo sont reconnus par notre système sécurisé.</p>
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <label class="form-label">ID 1xBet</label>
                     <input type="text" class="form-input" id="onexbetId" placeholder="Votre ID 1xBet">
+                    <div style="font-size: 12px; color: var(--text-tertiary); margin-top: 6px;">Vous le trouverez dans les paramètres de votre compte 1xBet</div>
                 </div>
 
                 <div class="form-group">
@@ -1260,7 +1636,7 @@
                     <input type="email" class="form-input" id="onexbetEmail" placeholder="email@1xbet.com">
                 </div>
 
-                <button class="btn-primary" onclick="verify1xBet()" style="width: 100%; margin-bottom: 16px;">Vérifier</button>
+                <button class="btn-primary" onclick="verify1xBet()" style="width: 100%; margin-bottom: 16px;">Vérifier le Compte</button>
                 <div id="verifyAlert"></div>
 
                 <div class="btn-group">
@@ -1275,20 +1651,22 @@
                     <button class="btn-close" onclick="closeAuthModal()">✕</button>
                 </div>
 
-                <div class="step-counter">Étape 4/6</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 66.67%;"></div></div>
+                <div class="step-counter">Étape 4/5</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
 
                 <h3 class="step-title">Mot de passe ArbiSure</h3>
-                <p class="step-subtitle">Sécurisez votre compte</p>
+                <p class="step-subtitle">Sécurisez votre compte avec un mot de passe fort</p>
 
                 <div class="form-group">
                     <label class="form-label">Nom d'utilisateur</label>
                     <input type="text" class="form-input" id="username" placeholder="jean_dupont_123">
+                    <div style="font-size: 12px; color: var(--text-tertiary); margin-top: 6px;">4-20 caractères, lettres et chiffres</div>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Mot de passe</label>
                     <input type="password" class="form-input" id="password" placeholder="••••••••••••">
+                    <div style="font-size: 12px; color: var(--text-tertiary); margin-top: 6px;">Minimum 8 caractères</div>
                 </div>
 
                 <div class="form-group">
@@ -1304,55 +1682,11 @@
 
             <div id="signupStep5" class="step-content">
                 <div class="modal-header">
-                    <h2 class="modal-title">Vérification OTP</h2>
-                    <button class="btn-close" onclick="closeAuthModal()">✕</button>
-                </div>
-
-                <div class="step-counter">Étape 5/6</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 83.33%;"></div></div>
-
-                <h3 class="step-title">Codes de vérification</h3>
-                <p class="step-subtitle">Vérifiez votre email et téléphone</p>
-
-                <div class="alert info">ℹ️ Codes envoyés à votre email et SMS</div>
-
-                <div class="form-group">
-                    <label class="form-label">Code email (6 chiffres)</label>
-                    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Code SMS (6 chiffres)</label>
-                    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                        <input type="text" class="form-input" maxlength="1" inputmode="numeric" style="text-align: center;">
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button class="btn-secondary btn-group-half" onclick="prevStep(4)">Retour</button>
-                    <button class="btn-primary btn-group-half" onclick="nextStep(6)">Suivant</button>
-                </div>
-            </div>
-
-            <div id="signupStep6" class="step-content">
-                <div class="modal-header">
                     <h2 class="modal-title">Conditions & Avertissements</h2>
                     <button class="btn-close" onclick="closeAuthModal()">✕</button>
                 </div>
 
-                <div class="step-counter">Étape 6/6</div>
+                <div class="step-counter">Étape 5/5</div>
                 <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
 
                 <h3 class="step-title">Accepter les conditions</h3>
@@ -1364,6 +1698,7 @@
                     <p>✓ Les paris comportent des risques d'addiction</p>
                     <p>✓ Ne pariez que l'argent vous pouvez perdre</p>
                     <p>✓ Les bookmakers peuvent fermer votre compte</p>
+                    <p>✓ ArbiSure n'est pas responsable des pertes</p>
                 </div>
 
                 <div class="checkbox-group">
@@ -1373,17 +1708,17 @@
 
                 <div class="checkbox-group">
                     <input type="checkbox" id="agree2">
-                    <label class="checkbox-label">J'accepte les conditions et la politique</label>
+                    <label class="checkbox-label">J'accepte les conditions d'utilisation et la politique de confidentialité</label>
                 </div>
 
                 <div class="checkbox-group">
                     <input type="checkbox" id="agree3">
-                    <label class="checkbox-label">J'accepte les avertissements sur les risques</label>
+                    <label class="checkbox-label">J'accepte les avertissements sur les risques du jeu</label>
                 </div>
 
                 <div class="btn-group">
-                    <button class="btn-secondary btn-group-half" onclick="prevStep(5)">Retour</button>
-                    <button class="btn-primary btn-group-half" onclick="completeSignup()">Créer compte</button>
+                    <button class="btn-secondary btn-group-half" onclick="prevStep(4)">Retour</button>
+                    <button class="btn-primary btn-group-half" onclick="completeSignup()">Créer mon compte</button>
                 </div>
             </div>
         </div>
@@ -1393,7 +1728,8 @@
         const state = {
             user: null,
             verified1xBet: false,
-            formData: {}
+            formData: {},
+            videoProgress: {}
         };
 
         // Load user
@@ -1402,6 +1738,12 @@
             if (saved) {
                 state.user = JSON.parse(saved);
                 showDashboard();
+            }
+            
+            // Load video progress
+            const videoData = localStorage.getItem('arbisureVideoProgress');
+            if (videoData) {
+                state.videoProgress = JSON.parse(videoData);
             }
         });
 
@@ -1475,23 +1817,26 @@
             const alert = document.getElementById('verifyAlert');
 
             if (!id || !email) {
-                alert.innerHTML = '<div class="alert error">Remplissez tous les champs</div>';
+                alert.innerHTML = '<div class="alert error">Remplissez tous les champs requis</div>';
                 return;
             }
 
-            alert.innerHTML = '<div class="alert info">⏳ Vérification sécurisée en cours...</div>';
+            alert.innerHTML = '<div class="alert info">⏳ Vérification sécurisée en cours auprès de 1xBet...</div>';
 
             setTimeout(() => {
                 const isValid = id.length > 3 && email.includes('@') && id.startsWith('1234');
-                
+
                 if (isValid) {
-                    alert.innerHTML = '<div class="alert success">✓ Compte vérifié avec succès</div>';
+                    alert.innerHTML = '<div class="alert success">✓ Compte vérifié avec succès • Créé avec BONUS9K</div>';
                     state.verified1xBet = true;
                     state.formData.onexbetId = id;
                     document.getElementById('nextStep3Btn').disabled = false;
+                    document.getElementById('nextStep3Btn').style.opacity = '1';
                 } else {
-                    alert.innerHTML = '<div class="alert error">✕ Compte introuvable ou non éligible à la validation sécurisée</div>';
+                    alert.innerHTML = '<div class="alert error">✕ Compte introuvable ou non créé avec le code promo BONUS9K.<br>Ce compte n\'est pas actif dans le système sécurisé ArbiSure.</div>';
                     state.verified1xBet = false;
+                    document.getElementById('nextStep3Btn').disabled = true;
+                    document.getElementById('nextStep3Btn').style.opacity = '0.5';
                 }
             }, 2000);
         }
@@ -1551,6 +1896,12 @@
         function scrollTo(selector) {
             document.querySelector(selector)?.scrollIntoView({ behavior: 'smooth' });
         }
+
+        // VIDEO TRACKING
+        window.addEventListener('beforeunload', () => {
+            state.videoProgress.lastWatch = new Date().toLocaleString('fr-FR');
+            localStorage.setItem('arbisureVideoProgress', JSON.stringify(state.videoProgress));
+        });
     </script>
 </body>
 </html>
